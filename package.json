@@ -12,6 +12,7 @@
         "rancher2": "cross-env BUILD_COMMAND=build:test GIT_URL=https://github.com/zkboys/react-admin-webpack5.git rancher-deploy"
     },
     "dependencies": {
+        "@ant-design/icons": "^4.7.0",
         "@babel/core": "^7.16.0",
         "@babel/plugin-proposal-decorators": "^7.17.2",
         "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
@@ -25,6 +26,7 @@
         "@testing-library/react": "^12.1.3",
         "@testing-library/user-event": "^13.5.0",
         "antd-mobile": "^5.9.5",
+        "antd-mobile-icons": "^0.2.2",
         "axios": "^0.26.1",
         "babel-jest": "^27.4.2",
         "babel-loader": "^8.2.3",
