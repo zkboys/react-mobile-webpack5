@@ -1,0 +1,22 @@
+/* https://mobile.ant.design/zh/guide/theming */
+:root:root {
+    --adm-color-primary: #d1ac70;
+    --adm-color-success: #00b578;
+    --adm-color-warning: #ff8f1f;
+    --adm-color-danger: #ff3141;
+    --adm-color-white: #ffffff;
+    --adm-color-weak: #999999;
+    --adm-color-light: #cccccc;
+    --adm-border-color: #eeeeee;
+    --adm-font-size-main: 13px;
+    --adm-color-text: #333333;
+    --adm-font-family: -apple-system, "system-ui", "PingFang SC", Helvetica, Tahoma, Arial, "Microsoft YaHei", 微软雅黑, sans-serif;
+    --adm-background-color-front: #333333;
+    --adm-background-color-back: #1e1d20;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--adm-background-color-back);
+}

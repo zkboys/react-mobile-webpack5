@@ -1,4 +1,5 @@
 import React, {Component, useContext, useEffect} from 'react';
+import {Helmet} from 'react-helmet';
 import {ajaxHoc} from 'src/commons/ajax';
 import {getLoginUser, getQuery, toLogin} from 'src/commons';
 import {AppContext} from 'src/app-context';
@@ -10,6 +11,7 @@ function commonHoc(options) {
         loginUser = true,
         layout = true,
         auth = false,
+        title,
     } = options;
 
     return (WrappedComponent) => {
@@ -29,7 +31,12 @@ function commonHoc(options) {
             if (query) _ejectProps.query = getQuery();
             if (loginUser) _ejectProps.loginUser = getLoginUser();
 
-            return <WrappedComponent {..._ejectProps} {...props} />;
+            return (
+                <>
+                    <Helmet title={title}/>
+                    <WrappedComponent {..._ejectProps} {...props} />
+                </>
+            );
         };
 
         WithEjectProps.displayName = `WithCommon(${componentName})`;

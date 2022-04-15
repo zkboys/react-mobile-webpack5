@@ -2,7 +2,7 @@ import storage from 'src/commons/storage';
 
 
 // 应用名称
-export const APP_NAME = 'react-mobil-webpack5';
+export const APP_NAME = 'NFT';
 // node环境
 export const NODE_ENV = process.env.NODE_ENV;
 // 实际运行环境，测试、预发布等环境时 NODE_ENV 也为 production，无法区分

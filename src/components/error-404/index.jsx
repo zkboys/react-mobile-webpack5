@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function Error404(props) {
 
     return (
-        <div>
+        <div style={{ color: '#fff', fontSize: 30 }}>
             404
         </div>
     );

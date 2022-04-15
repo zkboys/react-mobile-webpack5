@@ -1,4 +1,5 @@
 import {toLogin} from './index';
+import {Toast} from 'antd-mobile';
 
 const ERROR_SERVER = '系统开小差了，请稍后再试或联系管理员！';
 const ERROR_NOT_FOUND = '您访问的资源不存在！';
@@ -36,7 +37,9 @@ export default function handleError({ error, tip }) {
 
     // 避免卡顿
     setTimeout(() => {
-        alert(description);
-        // TODO 提示
+        Toast.show({
+            icon: 'fail',
+            content: description,
+        });
     });
 }
