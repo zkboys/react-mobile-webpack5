@@ -17,5 +17,5 @@ $ yarn start
 ## 生产构建
 
 ```bash
-$ yarn run build
+$ yarn  build
 ```
