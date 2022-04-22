@@ -5,7 +5,6 @@ import zhCN from 'antd-mobile/es/locales/zh-CN';
 import {Loading, Error404} from 'src/components';
 import routes from 'src/routes';
 import {toHome} from 'src/commons';
-import theme from 'src/theme.less';
 
 export default function App() {
     // 路由页面注入的数据
@@ -24,7 +23,7 @@ export default function App() {
     ]);
 
     return (
-        <ConfigProvider locale={zhCN} prefixCls={theme.antPrefix}>
+        <ConfigProvider locale={zhCN}>
             <Suspense fallback={<Loading loading/>}>
                 <div style={{ overflow: 'auto' }}>{element}</div>
             </Suspense>
