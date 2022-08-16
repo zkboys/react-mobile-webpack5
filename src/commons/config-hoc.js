@@ -1,7 +1,8 @@
 import React, {Component, useContext, useEffect} from 'react';
 import {Helmet} from 'react-helmet';
 import {ajaxHoc} from 'src/commons/ajax';
-import {getLoginUser, getQuery, toLogin} from 'src/commons';
+import {queryParse} from '@ra-lib/util';
+import {getLoginUser, toLogin} from 'src/commons';
 import {AppContext} from 'src/app-context';
 
 // 公共高阶组件，注入一些常用数据，比如 query loginUser等
@@ -28,7 +29,7 @@ function commonHoc(options) {
 
             // 默认添加属性到props中的属性
             const _ejectProps = {};
-            if (query) _ejectProps.query = getQuery();
+            if (query) _ejectProps.query = queryParse();
             if (loginUser) _ejectProps.loginUser = getLoginUser();
 
             return (

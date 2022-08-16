@@ -1,6 +1,7 @@
-import {useCallback, useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import {Button} from 'antd-mobile';
 import {BellOutline, AppOutline} from 'antd-mobile-icons';
+import {useFunction} from '@ra-lib/hooks';
 import config from 'src/commons/config-hoc';
 import c from 'classnames';
 import s from './style.module.less';
@@ -15,16 +16,16 @@ export default config()(function DetailFooter(props) {
     const [tipActive, setTipActive] = useState(false);
 
     // 提醒
-    const handleTip = useCallback(() => {
+    const handleTip = useFunction(() => {
         // 已经设置了提醒，不做任何操作了
         if (tipActive) return;
         // TODO
-    }, [tipActive]);
+    });
 
     // 分享
-    const handleShare = useCallback(() => {
+    const handleShare = useFunction(() => {
         // TODO 生成分享图片
-    }, []);
+    });
 
     // 获取状态
     useEffect(() => {

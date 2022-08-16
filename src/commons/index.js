@@ -1,9 +1,5 @@
 import storage from './storage';
 
-export function getQuery() {
-    // TODO
-}
-
 /**
  * 是否是登录页面
  */

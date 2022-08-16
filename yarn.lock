@@ -1456,6 +1456,11 @@
   resolved "https://registry.npmjs.org/@ra-lib/config-loader/-/config-loader-0.1.10.tgz#32b6c101c21e0dc5f43b7348a6f326002c641baa"
   integrity sha512-qgYexkllJcfDhY2B8Tu9YBx5Lw8B5oiXg2F8+TNRWvfcF1wUo5HJGYrZ37GQkPYd89vPeW1s3rtLn4oJPaA8KA==
 
+"@ra-lib/hooks@^0.1.17":
+  version "0.1.17"
+  resolved "https://registry.npmmirror.com/@ra-lib/hooks/-/hooks-0.1.17.tgz#c96762ddfc5b87ffd3aa6c4367313c74ff20b2bc"
+  integrity sha512-p4HzHPWOxbwaMzFoU0j/dJhmv6AKoRfqd1qHV8GFN6hinVRVzqLkQjIpgfIZVMb9Q+0DoOAy5zAIGEhH5XSZAg==
+
 "@ra-lib/rancher-deploy@^1.0.27":
   version "1.0.27"
   resolved "https://registry.npmjs.org/@ra-lib/rancher-deploy/-/rancher-deploy-1.0.27.tgz#1141260ffbbcd3e9f60b1aeb9eca10fb8a904d40"
@@ -4046,6 +4051,26 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-react-app-ra@^7.0.4:
+  version "7.0.4"
+  resolved "https://registry.npmmirror.com/eslint-config-react-app-ra/-/eslint-config-react-app-ra-7.0.4.tgz#548573de3e46341d35b20e0204e2b0103f9f22ec"
+  integrity sha512-1TEKW0Al01sRVx5jr85ja/CDPX5CVPJXzBy3el0c4DlVmR5LDC5LuL8/9K5oShoAjVCveJlUWorZW5CnGLwUWw==
+  dependencies:
+    "@babel/core" "^7.16.0"
+    "@babel/eslint-parser" "^7.16.3"
+    "@rushstack/eslint-patch" "^1.1.0"
+    "@typescript-eslint/eslint-plugin" "^5.5.0"
+    "@typescript-eslint/parser" "^5.5.0"
+    babel-preset-react-app "^10.0.1"
+    confusing-browser-globals "^1.0.11"
+    eslint-plugin-flowtype "^8.0.3"
+    eslint-plugin-import "^2.25.3"
+    eslint-plugin-jest "^25.3.0"
+    eslint-plugin-jsx-a11y "^6.5.1"
+    eslint-plugin-react "^7.27.1"
+    eslint-plugin-react-hooks-ra "4.3.3"
+    eslint-plugin-testing-library "^5.0.1"
+
 eslint-config-react-app@^7.0.0:
   version "7.0.0"
   resolved "https://registry.npmmirror.com/eslint-config-react-app/-/eslint-config-react-app-7.0.0.tgz#0fa96d5ec1dfb99c029b1554362ab3fa1c3757df"
@@ -4133,6 +4158,11 @@ eslint-plugin-jsx-a11y@^6.5.1:
     jsx-ast-utils "^3.2.1"
     language-tags "^1.0.5"
     minimatch "^3.0.4"
+
+eslint-plugin-react-hooks-ra@4.3.3:
+  version "4.3.3"
+  resolved "https://registry.npmjs.org/eslint-plugin-react-hooks-ra/-/eslint-plugin-react-hooks-ra-4.3.3.tgz#6654a18cf3a77a725cba8f6137e8803d52c21801"
+  integrity sha512-xcTPUzDXoLlUC5pW2fS9fVnrSfp7CGapB/f86JPJc0GG+lGDabfRxGj0PA7UuN2qgPMi5wKum3Ji2GFUO/FcHA==
 
 eslint-plugin-react-hooks@^4.3.0:
   version "4.3.0"

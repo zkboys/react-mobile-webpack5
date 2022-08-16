@@ -1,7 +1,8 @@
-import {useCallback, useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import {useNavigate} from 'react-router';
 import {Button, Form, Input} from 'antd-mobile';
 import {PageContent} from 'src/components';
+import {useFunction} from '@ra-lib/hooks';
 import config from 'src/commons/config-hoc';
 import s from './style.module.less';
 import {setLoginUser, toHome} from 'src/commons';
@@ -13,7 +14,8 @@ export default config({
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
     const [form] = Form.useForm();
-    const handleSubmit = useCallback(async (values) => {
+
+    const handleSubmit = useFunction(async (values) => {
         // TODO 接口对接
         // const res = await props.ajax.post('/login', values, { setLoading });
         console.log(props.ajax, setLoading);
@@ -24,7 +26,7 @@ export default config({
             token: res.token,
         });
         toHome();
-    }, [props.ajax]);
+    });
 
     // 开发测试时，表单填充
     useEffect(() => {

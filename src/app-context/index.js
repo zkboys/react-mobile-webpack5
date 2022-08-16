@@ -1,5 +1,6 @@
-import {createContext, useCallback, useReducer} from 'react';
+import {createContext, useReducer} from 'react';
 import {IS_SUB} from 'src/config';
+import {useFunction} from '@ra-lib/hooks';
 import {isLoginPage} from 'src/commons';
 
 const initialState = {
@@ -22,10 +23,10 @@ export const AppContext = createContext(null);
 export const AppProvider = (props) => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
-    const setLayout = useCallback((layout) => {
+    const setLayout = useFunction((layout) => {
         if (state.layout === layout) return;
         dispatch({ type: 'layout', payload: layout });
-    }, [state.layout]);
+    });
 
     return (
         <AppContext.Provider value={{ state, setLayout }}>
