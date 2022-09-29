@@ -1,4 +1,4 @@
-FROM bh-harbor.suixingpay.com/zhaikun/nginx:alpine
+FROM test-harbor.suixingpay.com/public/nginx-alpine:v1
 
 RUN rm -rf /etc/nginx/conf.d/* \
     && rm -rf /usr/share/nginx/html/*

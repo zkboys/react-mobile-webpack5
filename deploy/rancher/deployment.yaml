@@ -18,9 +18,9 @@ spec:
                 app: JOB_BASE_NAME
         spec:
             imagePullSecrets:
-                -   name: bh-harbor
+                -   name: harbor
             containers:
-                -   image: bh-harbor.suixingpay.com/zhaikun/JOB_BASE_NAME:BUILD_ID
+                -   image: test-harbor.suixingpay.com/app/JOB_BASE_NAME:BUILD_ID
                     imagePullPolicy: IfNotPresent
                     name: JOB_BASE_NAME
                     ports:
