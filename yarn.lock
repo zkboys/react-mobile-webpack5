@@ -1441,10 +1441,10 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@ra-lib/ajax@^0.1.48":
-  version "0.1.48"
-  resolved "https://registry.npmmirror.com/@ra-lib/ajax/-/ajax-0.1.48.tgz#0ee7a293bdebc52e361ecd653b5ebc8dd79e2834"
-  integrity sha512-kq90ztML08SfAP3yLWtsWsfsEeVkbUslRG+rR9qxQ+3+PCLXR8A/0hDVr2gj/52yvm68uzPD7SaZBjBSjE8CNA==
+"@ra-lib/ajax@^0.1.49":
+  version "0.1.49"
+  resolved "https://registry.npmmirror.com/@ra-lib/ajax/-/ajax-0.1.49.tgz#8971c8859780cbf6517ce503b955227a2671a884"
+  integrity sha512-l5gmE37ddInM5vFgDszzW95JYwLhZtJSmV8oHtKQ+k/GFo0Ala69mUJOOsd4uskmkO49ENpD5ZSGTdEI6ZOJXg==
 
 "@ra-lib/babel-plugin-attribute-wrapper@^0.0.21":
   version "0.0.21"

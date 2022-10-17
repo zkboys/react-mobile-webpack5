@@ -15,7 +15,7 @@
     "@babel/core": "^7.16.0",
     "@babel/plugin-proposal-decorators": "^7.17.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
-    "@ra-lib/ajax": "^0.1.48",
+    "@ra-lib/ajax": "^0.1.49",
     "@ra-lib/babel-plugin-attribute-wrapper": "^0.0.21",
     "@ra-lib/config-loader": "^0.1.14",
     "@ra-lib/hooks": "^0.1.19",
