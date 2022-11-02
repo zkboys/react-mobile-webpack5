@@ -43,7 +43,7 @@ export function getToken() {
  * 设置token
  */
 export function setToken(token) {
-    storage.session.setItem('loginUser', token);
+    storage.session.setItem('token', token);
     const loginUser = getLoginUser();
     if (loginUser) loginUser.token = token;
     setLoginUser(loginUser);
