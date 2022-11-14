@@ -8,7 +8,8 @@
     "build": "cross-env GENERATE_SOURCEMAP=false node scripts/build.js",
     "test": "node scripts/test.js",
     "build:test": "cross-env REACT_APP_RUN_ENV=test node scripts/build.js",
-    "rancher": "cross-env BUILD_COMMAND=build:test rancher-deploy"
+    "rancher": "cross-env BUILD_COMMAND=build:test rancher-deploy",
+    "fix-eslint": "replace-in-file 'const env = process.env.BABEL_ENV || process.env.NODE_ENV;' 'const env = process.env.BABEL_ENV || process.env.NODE_ENV || \"development\";' node_modules/babel-preset-react-app/index.js"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -78,6 +79,7 @@
     "react-router": "^6.2.2",
     "react-router-dom": "^6.2.2",
     "react-sortable-hoc": "^2.0.0",
+    "replace-in-file": "^6.3.5",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
     "semver": "^7.3.5",
@@ -99,17 +101,6 @@
     "rules": {
       "jsx-a11y/anchor-is-valid": 0,
       "import/no-anonymous-default-export": 0
-    },
-    "parserOptions": {
-      "babelOptions": {
-        "presets": [
-          [
-            "babel-preset-react-app",
-            false
-          ],
-          "babel-preset-react-app/prod"
-        ]
-      }
     }
   },
   "browserslist": {
